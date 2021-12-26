@@ -5,13 +5,36 @@
 	height:  calc(100vh - v.$logoSize - v.$logoPadding * 2);
 }
 #presentation-info {
+	display: grid;
+	grid-template-columns: repeat(1fr);
+	grid-template-rows: 64px 2rem 10rem 2rem 0px;
 	background-color: c.$primary;
-	height:70vh;
+	height: 64vh;
+	padding: 10vh 10vw;
+	color: c.$background;
 	h1 {
-		padding: 10vh 0 0 10vw;
-		max-width: 30vw;
-		color: c.$background;
-		font-size: 4rem;
 		margin: 0;
+		font-size: 4rem;
+		align-self: flex-end;
 	}
+	h3 {
+		font-weight: 300;
+		margin: 0 .2rem;
+	}
+}
+#download-resume-btn {
+	color: c.$secondary;
+	background-color: c.$background;
+	border-style: none;
+	border-radius: 15px;
+	width: 5.5rem;
+	margin: 0 1rem 0 0;
+	justify-self: flex-end;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.transition img {
+	height: 5vh;
+	width: 100%;
 }
