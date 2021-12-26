@@ -1,23 +1,18 @@
-import logo from '../assets/ico.svg';
-
 export const Header = () => {
 	return (
-		<nav class='navBar'>
-			<a class="nav-logo" href="http://localhost:3000/">
-				<img src={logo} alt="Logo" />
-			</a>
+		<nav id='header'>
 			<div>
-				<a class="aboutNav" href="#about">
+				<a className="about-nav" href="#about">
 					About
 				</a>
-				<a class="technologiesNav" href="#technologies">
+				<a className="technologies-nav" href="#technologies">
 					Technologies
 				</a>
-				<a class="projectsNav" href="#projects">
+				<a className="projects-nav" href="#projects">
 					Projects
 				</a>
 			</div>
-			<a class="contactNav" href="#contact">
+			<a className="contact-nav" href="#contact">
 				Contact
 			</a>
 		</nav>

@@ -1,29 +1,27 @@
 @use './colors.scss' as c;
+@use './styleVariables' as v;
 @use './mixins.scss';
 
-.navBar {
-	height: 2.2rem;
-	padding: 0 1rem;
+#header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: v.$logoSize;
+	padding: v.$logoPadding 0;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	background-color: c.$primary;
 	div {
-		margin: 0 2rem;
+		padding-left: 2rem + v.$logoPadding;
+		margin: 0 1.5rem;
 		a {
 			@include mixins.link;
 			padding: 0 1rem 0 0;
-			font-size: 0.95em;
 		}
 	}
 }
-.nav-logo {
-	height: 100%;
-	img {
-		height: 100%;
-		width: 100%;
-	}
-}
-.contactNav {
+.contact-nav {
 	@include mixins.link;
-	margin-left: auto;
+	padding: 0 1rem;
 }

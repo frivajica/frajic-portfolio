@@ -1,0 +1,12 @@
+@use './styleVariables' as v;
+@use './colors.scss' as c;
+
+#nav-logo {
+	height: v.$logoSize;
+	width: v.$logoSize;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+	padding: v.$logoPadding;
+	z-index: 1;
+}

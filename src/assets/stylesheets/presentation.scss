@@ -1,0 +1,10 @@
+@use './styleVariables' as v;
+@use './colors.scss' as c;
+
+#presentation {
+	height:  calc(100vh - v.$logoSize - v.$logoPadding * 2);
+}
+.info {
+	background-color: c.$primary;
+	height:70vh;
+}
