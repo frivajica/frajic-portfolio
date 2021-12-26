@@ -7,9 +7,8 @@
 #presentation-info {
 	display: grid;
 	grid-template-columns: repeat(1fr);
-	grid-template-rows: 64px 2rem 10rem 2rem 0px;
+	grid-template-rows: 5rem 2rem auto 2.2rem;
 	background-color: c.$primary;
-	height: 64vh;
 	padding: 10vh 10vw;
 	color: c.$background;
 	h1 {
@@ -20,6 +19,10 @@
 	h3 {
 		font-weight: 300;
 		margin: 0 .2rem;
+	}
+	p {
+		padding: 0 2rem 0 0;
+		text-align: justify;
 	}
 }
 #download-resume-btn {
