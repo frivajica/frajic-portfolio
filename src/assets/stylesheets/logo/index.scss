@@ -1,5 +1,5 @@
-@use './styleVariables' as v;
-@use './colors.scss' as c;
+@use '../common/styleVariables' as v;
+@use '../common/colors.scss' as c;
 
 #nav-logo {
 	height: v.$logoSize;

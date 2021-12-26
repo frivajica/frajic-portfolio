@@ -1,6 +1,6 @@
-@use './colors.scss' as c;
-@use './styleVariables' as v;
-@use './mixins.scss';
+@use '../common/colors.scss' as c;
+@use '../common/styleVariables' as v;
+@use '../common/mixins.scss';
 
 #header {
 	position: absolute;
