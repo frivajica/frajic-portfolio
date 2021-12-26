@@ -1,6 +1,6 @@
-export const PresentationInfo = () => {
+export const IntroductionInfo = () => {
   return (
-		<div id="presentation-info" >
+		<div id="introduction-info" >
 				<h1>Francisco Jiménez</h1>
 				<h3>Frontend Developer</h3>
 				<p>

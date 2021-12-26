@@ -1,10 +1,10 @@
 import waveTransition from '../assets/transition.svg';
-import { PresentationInfo } from '../components/PresentationInfo';
+import { IntroductionInfo } from '../components/IntroductionInfo';
 
-export const Presentation = () => {
+export const Introduction = () => {
 	return(
-		<div id='presentation'>
-			<PresentationInfo />
+		<div id='introduction'>
+			<IntroductionInfo />
 			<div className='transition'>
 				<img src={waveTransition} alt="trasition" />
 			</div>
