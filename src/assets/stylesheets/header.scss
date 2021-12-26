@@ -1,0 +1,29 @@
+@use './colors.scss' as c;
+@use './mixins.scss';
+
+.navBar {
+	height: 2.2rem;
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	background-color: c.$primary;
+	div {
+		margin: 0 2rem;
+		a {
+			@include mixins.link;
+			padding: 0 1rem 0 0;
+			font-size: 0.95em;
+		}
+	}
+}
+.nav-logo {
+	height: 100%;
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+.contactNav {
+	@include mixins.link;
+	margin-left: auto;
+}

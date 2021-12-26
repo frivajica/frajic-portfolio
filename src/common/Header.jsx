@@ -1,12 +1,12 @@
-import {ReactComponent as BrandIco} from '../assets/ico.svg';
+import logo from '../assets/ico.svg';
 
 export const Header = () => {
 	return (
-		<>
+		<nav class='navBar'>
 			<a class="nav-logo" href="http://localhost:3000/">
-				<BrandIco />
+				<img src={logo} alt="Logo" />
 			</a>
-			<nav>
+			<div>
 				<a class="aboutNav" href="#about">
 					About
 				</a>
@@ -16,10 +16,10 @@ export const Header = () => {
 				<a class="projectsNav" href="#projects">
 					Projects
 				</a>
-				<a class="contactNav" href="#contact">
-					Contact
-				</a>
-			</nav>
-		</>
+			</div>
+			<a class="contactNav" href="#contact">
+				Contact
+			</a>
+		</nav>
 	);
 };

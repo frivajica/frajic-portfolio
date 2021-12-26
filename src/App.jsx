@@ -2,7 +2,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Header } from './common/Header'
 import { Footer } from './common/Footer'
 import { Landing } from './layouts/Landing'
-import './App.css';
+import './/assets/stylesheets/App.scss';
 
 function App() {
   return (

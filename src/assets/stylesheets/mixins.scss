@@ -1,0 +1,6 @@
+@use './colors.scss' as c;
+
+@mixin link {
+	text-decoration: none;
+	color: c.$background;
+}
