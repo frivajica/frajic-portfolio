@@ -1,12 +1,28 @@
 @use '../common/styleVariables' as v;
 @use '../common/colors.scss' as c;
+@use './BurguerMenu.scss';
 
+#nav-fixed {
+	width: 100%;
+	position: fixed;
+	display: grid;
+	grid-template-columns: v.$totalLogoSize 1fr v.$totalLogoSize;
+	grid-template-rows: v.$totalLogoSize;
+	z-index: 1;
+	nav {
+		padding: v.$logoPadding 0;
+		grid-column: 3;
+		mix-blend-mode: difference
+	}
+}
 #nav-logo {
 	height: v.$logoSize;
 	width: v.$logoSize;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+	position: fixed;
   top: 0;
 	padding: v.$logoPadding;
 	z-index: 1;
+	a {
+		grid-column: 1;
+	}
 }

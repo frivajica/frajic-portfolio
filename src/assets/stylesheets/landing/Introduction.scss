@@ -2,18 +2,18 @@
 @use '../common/colors.scss' as c;
 
 #introduction {
-	height:  calc(100vh - v.$logoSize - v.$logoPadding * 2);
+	height:  100vh;
 }
 #introduction-info {
 	display: grid;
 	grid-template-columns: repeat(1fr);
-	grid-template-rows: 5rem 2rem auto 2.2rem;
+	grid-template-rows: auto 2rem auto 2.2rem;
 	background-color: c.$primary;
-	padding: 10vh 10vw;
+	padding: 20vh 10vw;
 	color: c.$background;
 	h1 {
 		margin: 0;
-		font-size: 4rem;
+		font-size: 8vh;
 		align-self: flex-end;
 	}
 	h3 {
@@ -33,6 +33,7 @@
 	width: 5.5rem;
 	margin: 0 1rem 0 0;
 	justify-self: flex-end;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 	&:hover {
 		cursor: pointer;
 	}

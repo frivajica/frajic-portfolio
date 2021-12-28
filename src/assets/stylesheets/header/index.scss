@@ -9,12 +9,13 @@
 	height: v.$logoSize;
 	padding: v.$logoPadding 0;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	background-color: c.$primary;
 	div {
 		padding-left: 2rem + v.$logoPadding;
 		margin: 0 1.5rem;
+		width: 100%;
+		display: flex;
 		a {
 			@include mixins.link;
 			padding: 0 1rem 0 0;
@@ -24,4 +25,5 @@
 .contact-nav {
 	@include mixins.link;
 	padding: 0 1rem;
+	margin-left: auto;
 }
