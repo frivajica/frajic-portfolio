@@ -1,5 +1,5 @@
 import logo from "../assets/ico.svg";
-import { BurgerMenu } from "../components/BugerMenu";
+import { BurgerMenu } from "./BurgerMenu";
 
 export const Logo = ({ isSmallScreen }) => {
   return (

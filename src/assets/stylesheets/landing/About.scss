@@ -1,0 +1,16 @@
+#about {
+	padding: 1rem 5vw;
+	margin: 1rem 0;
+	display: grid;
+	grid-template-columns: 35%;
+}
+#technologies {
+	grid-column: 2;
+	padding: 0 5vw;
+	h2 {
+		padding: 0 1rem;
+	}
+}
+#meet-fran h2 {
+	padding: 0 1rem;
+}

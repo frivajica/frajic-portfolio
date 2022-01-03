@@ -13,8 +13,7 @@ function App() {
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
-  }, [window.innerWidth])
-
+  }, [handleResize])
 
   return (
     <Router>

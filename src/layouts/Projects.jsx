@@ -1,7 +1,12 @@
+import { ImageSlider } from '../components/ImageSlider';
+
 export const Projects = () => {
 	return(
 		<div id='projects'>
-			<h2>Some projects</h2>
+			<div>
+				<h2>Projects</h2>
+				<ImageSlider />
+			</div>
 		</div>
 	);
 };

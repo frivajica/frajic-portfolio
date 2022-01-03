@@ -1,7 +1,7 @@
 export const Technologies = () => {
 	return(
 		<div id='technologies'>
-			<h2>Technologies</h2>
+			<h2>Skills & Technologies</h2>
 		</div>
 	);
 };

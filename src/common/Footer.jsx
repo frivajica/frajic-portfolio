@@ -10,9 +10,9 @@ export const Footer = () => {
 			<div id='social-networks'>
 				<h2>Social Networks</h2>
 				<div>
-					<FaInstagram />
-					<FaGithub />
-					<FaLinkedinIn />
+					<FaInstagram size={25} />
+					<FaGithub size={25} />
+					<FaLinkedinIn size={25} />
 				</div>
 			</div>
 			<div id='copyright'>
