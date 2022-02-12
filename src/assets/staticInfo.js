@@ -1,5 +1,5 @@
 export const staticInfo = {
-	position: "Software Engineer",
+	position: "Full Stack Developer",
 	greeting: "Hi! I'm Francisco and I'm a Full Stack Developer.",
 	presentation: [
 		{
@@ -18,15 +18,19 @@ export const staticInfo = {
 	meetFran: [
 		{
 			paragraph: 1, 
-			text: "I discovered my joy for programming after working as a Data Analyst in the food industry."
-		}, 
+			text: "I discovered a special joy for programming after working as a Data Analyst in the food industry.", 
+		},
 		{
 			paragraph: 2, 
+			text: "I love building software that helps other work more comfortably and efficiently."
+		}, 
+		{
+			paragraph: 3, 
 			text: "One of the most important side effects of being curious is that you end up learning something, even if you're not even trying, so I enjoy it as my natural way to be."
 		},
 		{
-			paragraph: 3, 
-			text: "At this moment I'm also interested on Ruby on Rails and Python.", 
+			paragraph: 4, 
+			text: "My core stack involves React, but at this moment I'm also interested on learning Ruby on Rails and Python.", 
 		},
 	],
 };

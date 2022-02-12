@@ -1,0 +1,49 @@
+@use '../common/colors.scss' as c;
+
+.icon-list {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-item {
+  list-style: none;
+  a { 
+    display: inline-flex;
+    font-size: 3rem;  
+    text-decoration: none;  
+    color: c.$background;
+    width: 6rem;
+    height: 6rem;
+    transition: .5s linear;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  a::before {  
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+  }
+  a:hover::before {  
+    transform: scale(1);
+  }  
+}
+.icon-item:nth-child(1) a:hover:before { 
+  background: c.$instagram; 
+}
+
+.icon-item:nth-child(2) a:hover:before { 
+  background: c.$github; 
+}
+
+.icon-item:nth-child(3) a:hover:before { 
+  background: c.$linkedin; 
+}

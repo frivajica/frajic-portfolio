@@ -1,3 +1,5 @@
+
+@use 'SocialNetworks.scss';
 @use '../common/colors.scss' as c;
 
 #footer {
@@ -13,6 +15,10 @@
 	grid-column: 1 / span 2;
 	margin-bottom: 1rem;
 }
-#social-networks div * {
+#social-networks ul * {
 		margin: 0 1.5rem;
 }
+// #social-networks div {
+// 	display: flex;
+// 	justify-content: space-around;
+// }
