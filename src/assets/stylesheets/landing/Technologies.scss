@@ -1,0 +1,14 @@
+.tech-container {
+	margin: 4rem 0;
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat( auto-fit, minmax(80px, 1fr) );
+	grid-gap: 4rem 1rem;
+}
+
+.tech-item {
+	width: 2rem;
+	height: 2rem;
+}

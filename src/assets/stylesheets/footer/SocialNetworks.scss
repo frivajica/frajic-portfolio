@@ -2,6 +2,7 @@
 
 .icon-list {
   width: 90%;
+  margin: 0;
   display: flex;
   justify-content: center;
 }
@@ -13,8 +14,8 @@
     font-size: 3rem;  
     text-decoration: none;  
     color: c.$background;
-    width: 6rem;
-    height: 6rem;
+    width: auto;
+    height: 3rem;
     transition: .5s linear;
     position: relative;
     z-index: 1;
