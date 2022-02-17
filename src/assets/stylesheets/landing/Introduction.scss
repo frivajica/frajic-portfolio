@@ -7,7 +7,8 @@
 #introduction-info {
 	display: grid;
 	grid-template-columns: repeat(1fr);
-	grid-template-rows: auto 2rem auto 2.2rem;
+	grid-template-rows: repeat( auto-fit, minmax(80px, 1fr) );
+	row-gap: 1rem;
 	background-color: c.$primary;
 	padding: 20vh 10vw 10vw 10vw;
 	color: c.$background;
@@ -23,6 +24,7 @@
 		z-index: 1;
 	}
 	p {
+		margin: 0;
 		padding: 0 2rem 0 0;
 		text-align: justify;
 		z-index: 1;

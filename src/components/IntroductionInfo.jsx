@@ -6,7 +6,7 @@ export const IntroductionInfo = () => {
       <h1>Francisco Jiménez</h1>
       <h3>{staticInfo.position}</h3>
       <p>{staticInfo.greeting}</p>
-      {staticInfo.presentation.map( e => <p key={e.paragraph}>{e.text}</p> )}
+        {staticInfo.presentation.map( e => <p key={e.paragraph}>{e.text}</p> )}
       <button id="download-resume-btn">Download Resume</button>
     </div>
   );
