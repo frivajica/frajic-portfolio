@@ -12,6 +12,23 @@
 	background-color: c.$primary;
 	padding: 20vh 10vw 10vw 10vw;
 	color: c.$background;
+}
+#download-resume-btn {
+	color: c.$secondary;
+	background-color: c.$background;
+	border-style: none;
+	border-radius: 15px;
+	width: 5.5rem;
+	margin: 1rem 0 0 0;
+	justify-self: flex-start;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	&:hover {
+		cursor: pointer;
+	}
+}
+.name-and-position {
+	display: grid;
+	row-gap: 1rem;
 	h1 {
 		margin: 0;
 		font-size: 8vh;
@@ -23,24 +40,16 @@
 		margin: 0 .2rem;
 		z-index: 1;
 	}
+}
+.introduction-paragraphs{
+	display: grid;
+	row-gap: 1rem;
+	margin: 0 40% 0 0;
 	p {
 		margin: 0;
 		padding: 0 2rem 0 0;
 		text-align: justify;
 		z-index: 1;
-	}
-}
-#download-resume-btn {
-	color: c.$secondary;
-	background-color: c.$background;
-	border-style: none;
-	border-radius: 15px;
-	width: 5.5rem;
-	margin: 0 1rem 0 0;
-	justify-self: flex-end;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-	&:hover {
-		cursor: pointer;
 	}
 }
 .transition img {

@@ -3,6 +3,7 @@ import { GrReactjs, GrMysql, GrArchlinux } from "react-icons/gr";
 import { FaNodeJs, FaDatabase } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { DiScrum, DiSass, DiCss3, DiHtml5, DiNpm } from "react-icons/di";
+import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 
 export const tech = [
 	{id: 1, name: "JavaScript", icon: <SiJavascript size="100%" />, color: "#f7e018"},
@@ -62,3 +63,12 @@ export const staticInfo = {
 		},
 	],
 };
+export const socialMedia = [
+		{
+			id: 1, link: "https://www.instagram.com/frivajica/", icon: <FaInstagram size={25} />,
+		}, 
+		{
+			id: 2, link: "https://github.com/frivajica", icon: <FaGithub size={25} />,
+		}, 
+		{id: 3, link: "https://www.linkedin.com/in/franjimenezc/", icon: <FaLinkedinIn size={25} />}, 
+	]
