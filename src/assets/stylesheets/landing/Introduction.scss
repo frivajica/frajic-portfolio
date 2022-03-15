@@ -6,23 +6,18 @@
 }
 #introduction-info {
 	display: grid;
-	grid-template-columns: repeat(1fr);
-	grid-template-rows: auto 2rem auto 2.2rem;
+	grid-template-columns: 1fr 40%;
+	grid-template-rows: repeat( auto-fit, minmax(80px, 1fr) );
+	row-gap: 1rem;
 	background-color: c.$primary;
-	padding: 20vh 10vw;
+	padding: 20vh 2vw 10vw 10vw;
 	color: c.$background;
-	h1 {
-		margin: 0;
-		font-size: 8vh;
-		align-self: flex-end;
-	}
-	h3 {
-		font-weight: 300;
-		margin: 0 .2rem;
-	}
-	p {
-		padding: 0 2rem 0 0;
-		text-align: justify;
+	img {
+		grid-column: 2;
+		grid-row: 1 / span 2;
+		width: 80%;
+		align-self: center;
+		justify-self: center;
 	}
 }
 #download-resume-btn {
@@ -31,11 +26,40 @@
 	border-style: none;
 	border-radius: 15px;
 	width: 5.5rem;
-	margin: 0 1rem 0 0;
-	justify-self: flex-end;
+	margin: 1rem 0 0 0;
+	justify-self: flex-start;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 	&:hover {
 		cursor: pointer;
+	}
+}
+
+.name-and-position {
+	grid-column: 1 / span 2;
+	grid-row: 1;
+	display: grid;
+	row-gap: 1rem;
+	h1 {
+		margin: 0;
+		font-size: 8vh;
+		align-self: flex-end;
+		z-index: 1;
+	}
+	h3 {
+		font-weight: 300;
+		margin: 0 .2rem;
+		z-index: 1;
+	}
+}
+.introduction-paragraphs{
+	grid-column: 1;
+	display: grid;
+	row-gap: 1rem;
+	p {
+		margin: 0;
+		padding: 0 2rem 0 0;
+		text-align: justify;
+		z-index: 1;
 	}
 }
 .transition img {
