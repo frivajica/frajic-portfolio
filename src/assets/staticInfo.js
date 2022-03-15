@@ -33,7 +33,7 @@ export const staticInfo = {
 	presentation: [
 		{
 			paragraph: 1, 
-			text: "Discovering more efficient ways to do things, building solutions and giving everything an aesthetic look are some of my favourite parts of the job.",
+			text: "Discovering more efficient ways to do things, building solutions and giving everything an aesthetic look. Some of my favourite parts of the job.",
 		}, 
 		{
 			paragraph: 2, 

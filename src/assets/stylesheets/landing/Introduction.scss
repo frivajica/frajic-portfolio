@@ -6,12 +6,19 @@
 }
 #introduction-info {
 	display: grid;
-	grid-template-columns: repeat(1fr);
+	grid-template-columns: 1fr 40%;
 	grid-template-rows: repeat( auto-fit, minmax(80px, 1fr) );
 	row-gap: 1rem;
 	background-color: c.$primary;
-	padding: 20vh 10vw 10vw 10vw;
+	padding: 20vh 2vw 10vw 10vw;
 	color: c.$background;
+	img {
+		grid-column: 2;
+		grid-row: 1 / span 2;
+		width: 80%;
+		align-self: center;
+		justify-self: center;
+	}
 }
 #download-resume-btn {
 	color: c.$secondary;
@@ -26,7 +33,10 @@
 		cursor: pointer;
 	}
 }
+
 .name-and-position {
+	grid-column: 1 / span 2;
+	grid-row: 1;
 	display: grid;
 	row-gap: 1rem;
 	h1 {
@@ -42,9 +52,9 @@
 	}
 }
 .introduction-paragraphs{
+	grid-column: 1;
 	display: grid;
 	row-gap: 1rem;
-	margin: 0 40% 0 0;
 	p {
 		margin: 0;
 		padding: 0 2rem 0 0;
