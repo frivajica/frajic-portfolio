@@ -1,4 +1,5 @@
-import { socialMedia } from "../assets/staticInfo";
+import { socialMedia } from "src/assets/staticInfo";
+import './Footer.scss'
 
 export const Footer = () => {
   return (
@@ -12,7 +13,7 @@ export const Footer = () => {
         <ul className="icon-list">
           {socialMedia?.map((e) => (
             <li key={e.id} className="icon-item">
-              <a href={e.link} target="_blank">{e.icon}</a>
+              <a href={e.link} target="_blank" rel="noreferrer">{e.icon}</a>
             </li>
           ))}
         </ul>

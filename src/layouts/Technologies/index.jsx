@@ -1,5 +1,6 @@
-import { tech } from "../assets/staticInfo";
-import { TechItem } from "../components/TechItem";
+import { tech } from "src/assets/staticInfo";
+import { TechItem } from "src/components/TechItem";
+import './Technologies.scss'
 
 export const Technologies = () => {
 	return(

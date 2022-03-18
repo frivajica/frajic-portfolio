@@ -1,6 +1,5 @@
-@use '../common/styleVariables' as v;
-@use '../common/colors.scss' as c;
-@use './BurguerMenu.scss';
+@use 'src/assets/stylesheets/styleVariables' as v;
+@use 'src/assets/stylesheets/colors.scss' as c;
 
 #nav-fixed {
 	width: 100%;

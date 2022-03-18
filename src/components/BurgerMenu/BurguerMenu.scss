@@ -1,5 +1,5 @@
-@use '../common/styleVariables.scss' as v;
-@use '../common/colors.scss' as c;
+@use 'src/assets/stylesheets/styleVariables.scss' as v;
+@use 'src/assets/stylesheets/colors.scss' as c;
 
 #menuToggle {
 	height: v.$logoSize;

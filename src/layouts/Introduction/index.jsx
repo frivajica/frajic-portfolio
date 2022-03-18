@@ -1,5 +1,6 @@
-import waveTransition from '../assets/transition.svg';
-import { IntroductionInfo } from '../components/IntroductionInfo';
+import waveTransition from 'src/assets/images/transition.svg';
+import { IntroductionInfo } from 'src/components/IntroductionInfo';
+import './Introduction.scss'
 
 export const Introduction = () => {
 	return(
