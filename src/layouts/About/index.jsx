@@ -1,5 +1,6 @@
-import { Technologies } from './Technologies';
-import { staticInfo } from "../assets/staticInfo";
+import { Technologies } from 'src/layouts/Technologies';
+import { staticInfo } from "src/assets/staticInfo";
+import './About.scss'
 
 export const About = () => {
 	return(

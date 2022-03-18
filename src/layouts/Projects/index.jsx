@@ -1,4 +1,5 @@
-import { ImageSlider } from '../components/ImageSlider';
+import { ImageSlider } from 'src/components/ImageSlider';
+import './Projects.scss'
 
 export const Projects = () => {
 	return(

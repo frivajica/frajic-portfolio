@@ -1,8 +1,14 @@
-export const Header = ({isSmallScreen}) => {
+import './BurguerMenu.scss';
+
+export const BurgerMenu = () => {
   return (
-    <nav id="header">
-      {!isSmallScreen && (
-        <div>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
           <a className="about-nav" href="#about">
             About
           </a>
@@ -15,8 +21,8 @@ export const Header = ({isSmallScreen}) => {
           <a className="contact-nav" href="#contact">
             Contact
           </a>
-        </div>
-      )}
+        </ul>
+      </div>
     </nav>
   );
 };
