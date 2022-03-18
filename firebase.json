@@ -5,6 +5,7 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run lint"]
   }
 }
