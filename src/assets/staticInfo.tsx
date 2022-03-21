@@ -1,3 +1,4 @@
+import React from 'react';
 import { SiJavascript, SiExpress, SiRedux, SiPostgresql, SiMocha, SiSequelize, SiStyledcomponents, SiPassport } from "react-icons/si";
 import { GrReactjs, GrMysql, GrArchlinux } from "react-icons/gr";
 import { FaNodeJs, FaDatabase } from "react-icons/fa";

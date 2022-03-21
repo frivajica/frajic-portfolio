@@ -1,14 +1,15 @@
-import './BurguerMenu.scss';
+import React from 'react';
+import './Header.scss'
 
-export const BurgerMenu = () => {
+type HeaderProps = {
+  isSmallScreen: boolean;
+}
+
+export const Header: React.FC<HeaderProps> = ({isSmallScreen}) => {
   return (
-    <nav role="navigation">
-      <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
+    <nav id="header">
+      {!isSmallScreen && (
+        <div>
           <a className="about-nav" href="#about">
             About
           </a>
@@ -21,8 +22,8 @@ export const BurgerMenu = () => {
           <a className="contact-nav" href="#contact">
             Contact
           </a>
-        </ul>
-      </div>
+        </div>
+      )}
     </nav>
   );
 };

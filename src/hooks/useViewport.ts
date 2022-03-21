@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useViewport = (maxWidth) => {
+export const useViewport = (maxWidth: number) => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= maxWidth);
 	const handleResize = () => {
 		setIsSmallScreen(window.innerWidth <= maxWidth)

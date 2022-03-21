@@ -1,7 +1,8 @@
+import React from 'react';
 import { ImageSlider } from 'src/components/ImageSlider';
 import './Projects.scss'
 
-export const Projects = () => {
+export const Projects: React.FC = () => {
 	return(
 		<div id='projects'>
 			<div>
