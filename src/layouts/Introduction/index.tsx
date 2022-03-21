@@ -1,8 +1,9 @@
+import React from 'react';
 import waveTransition from 'src/assets/images/transition.svg';
 import { IntroductionInfo } from 'src/components/IntroductionInfo';
 import './Introduction.scss'
 
-export const Introduction = () => {
+export const Introduction: React.FC = () => {
 	return(
 		<div id='introduction'>
 			<IntroductionInfo />

@@ -1,7 +1,8 @@
+import React from 'react';
 import { staticInfo } from "src/assets/staticInfo";
 import goodWork from "src/assets/images/good_work.svg";
 
-export const IntroductionInfo = () => {
+export const IntroductionInfo: React.FC = () => {
   return (
     <div id="introduction-info">
       <div className="name-and-position">

@@ -1,7 +1,8 @@
+import React from 'react';
 import { socialMedia } from "src/assets/staticInfo";
 import './Footer.scss'
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   return (
     <div id="footer">
       <div id="residence">

@@ -1,8 +1,13 @@
+import React from 'react';
 import logo from "src/assets/images/ico.svg";
 import { BurgerMenu } from "src/components/BurgerMenu";
 import './Logo.scss'
 
-export const Logo = ({ isSmallScreen }) => {
+type LogoProps = {
+  isSmallScreen: boolean;
+}
+
+export const Logo: React.FC<LogoProps> = ({ isSmallScreen }) => {
   return (
     <div id={isSmallScreen ? 'nav-fixed' : ''}>
       <div id="nav-logo">

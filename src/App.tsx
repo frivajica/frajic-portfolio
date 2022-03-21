@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { useViewport } from './hooks/useViewport'
+import React, { useEffect } from 'react';
+import { useViewport } from './hooks/useViewport';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Logo } from 'src/components/Logo';
 import { Header } from 'src/common/Header';
@@ -7,13 +7,13 @@ import { Footer } from 'src/common/Footer';
 import { Landing } from 'src/layouts/Landing';
 import 'src/App.scss';
 
-function App() {
+const App: React.FC = () => {
   const { isSmallScreen, handleResize } = useViewport(750);
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
-  }, [handleResize])
+  }, [handleResize]);
 
   return (
     <Router>

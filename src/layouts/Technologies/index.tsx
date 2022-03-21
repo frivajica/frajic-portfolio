@@ -1,8 +1,9 @@
+import React from 'react';
 import { tech } from "src/assets/staticInfo";
 import { TechItem } from "src/components/TechItem";
-import './Technologies.scss'
+import './Technologies.scss';
 
-export const Technologies = () => {
+export const Technologies: React.FC = () => {
 	return(
 		<div id='technologies'>
 			<h2>Skills & Technologies</h2>
