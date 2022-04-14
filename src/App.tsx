@@ -1,26 +1,16 @@
-import React, { useEffect } from 'react';
-import { useViewport } from './hooks/useViewport';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Logo } from 'src/components/Logo';
-import { Header } from 'src/common/Header';
-import { Footer } from 'src/common/Footer';
-import { Landing } from 'src/layouts/Landing';
-import 'src/App.scss';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "src/App.scss";
+import { Home } from "./layouts/Home/index";
+import { YAhoraUnPoema } from "src/components/YAhoraUnPoema";
 
 const App: React.FC = () => {
-  const { isSmallScreen, handleResize } = useViewport(750);
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, [handleResize]);
-
   return (
     <Router>
-      <Logo isSmallScreen={isSmallScreen} />
-      <Header isSmallScreen={isSmallScreen} />
-      <Landing />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/laFlorYElMendigo" element={<YAhoraUnPoema />} />
+      </Routes>
     </Router>
   );
 };
