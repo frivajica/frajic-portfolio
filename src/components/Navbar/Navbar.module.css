@@ -1,0 +1,21 @@
+.container {
+	width: 100%;
+	height: var(--navbar-height);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	padding: 0 15%;
+}
+
+.routes {
+	display: flex;
+	gap: 2em;
+}
+
+.networks {
+	display: flex;
+	gap: 4em;
+}

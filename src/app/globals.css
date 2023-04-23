@@ -11,10 +11,10 @@
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
+    #5bf5e8f3 0deg,
+    #08d6ffc5 55deg,
+    #54fffcc9 120deg,
+    #00e1ff70 160deg,
     transparent 360deg
   );
   --secondary-glow: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
@@ -31,6 +31,8 @@
     #00000080
   );
 
+  --navbar-height: 5em;
+  --footer-height: 3em;
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
@@ -43,12 +45,12 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --primary-glow: radial-gradient(rgba(1, 247, 255, 0.4), rgba(1, 255, 225, 0.08));
     --secondary-glow: linear-gradient(
       to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
+      rgba(1, 234, 255, 0.66),
+      rgba(1, 247, 255, 0.047),
+      rgba(1, 242, 255, 0.3)
     );
 
     --tile-start-rgb: 2, 13, 46;
@@ -80,6 +82,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 body {

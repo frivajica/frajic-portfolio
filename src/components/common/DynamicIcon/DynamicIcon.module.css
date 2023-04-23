@@ -1,0 +1,41 @@
+.item {
+  list-style: none;
+	display: inline-flex;
+	font-size: 3rem;
+	text-decoration: none;  
+	width: auto;
+	height: 3rem;
+	transition: .5s linear;
+	position: relative;
+	z-index: 1;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.item::before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	z-index: -1;
+	transform: scale(0);
+	transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+}
+
+.item:hover::before {
+	transform: scale(1);
+}
+
+.container:nth-child(1) .item:hover:before { 
+  background: #363636; 
+}
+
+.container:nth-child(2) .item:hover:before { 
+  background: #e4405f; 
+}
+
+.container:nth-child(3) .item:hover:before { 
+  background: #0077B5; 
+}
