@@ -1,4 +1,4 @@
-import { DynamicIconProps } from "@/src/interfaces";
+import { DynamicIconProps } from "@/interfaces";
 import styles from "./DynamicIcon.module.css";
 
 export default function DynamicIcon({ icon, link }: DynamicIconProps) {

@@ -1,5 +1,5 @@
-import Footer from "@/src/components/Footer";
-import Navbar from "@/src/components/Navbar";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Frajic | Home",

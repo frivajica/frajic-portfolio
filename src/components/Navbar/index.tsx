@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { socialMedia } from "@/src/static/data";
+import { socialMedia } from "@/static/data";
 import DynamicIcon from "../common/DynamicIcon";
 import styles from "./Navbar.module.css";
 
