@@ -7,17 +7,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint-format": "prettier ./app --write && eslint --fix ./app"
+    "lint-format": "prettier ./app --write && eslint --fix ./app",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@imbios/next-pwa": "^1.1.1",
     "@types/node": "18.15.13",
     "@types/react": "18.0.38",
     "@types/react-dom": "18.0.11",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
-    "next": "13.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "typescript": "5.0.4"
   },
   "devDependencies": {
@@ -25,6 +28,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-standard-with-typescript": "^34.0.1",
     "lint-staged": "^13.2.1",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.8.7"
   },
   "precommit": {
@@ -33,7 +37,7 @@
     ]
   },
   "lint-staged": {
-    "app/**/*.{js,jsx,ts,tsx}": [
+    "src/**/*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "eslint --fix"
     ]
