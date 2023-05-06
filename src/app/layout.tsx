@@ -4,12 +4,12 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  applicationName: 'Frajic Portfolio',
+  applicationName: "Frajic Portfolio",
   title: "Frajic",
-  keywords: ['Next.js', 'React', 'JavaScript'],
+  keywords: ["Next.js", "React", "JavaScript"],
   description: "Personal web site",
-  manifest: '/manifest.json',
-  themeColor: 'black',
+  manifest: "/manifest.json",
+  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#317EFB" }],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
